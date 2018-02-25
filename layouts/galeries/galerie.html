@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="fr">
+{{ partial "head" . }}
+<body>
+{{ partial "header" . }}
+<main>
+<div class="container">
+ <div class="row" id="lightgallery">
+{{ range $element :=  .Site.Data.gallery.list.images }}
+<a href="{{ $element.image }}"><img src="{{ $element.thumb }}" alt=""></a>
+{{ end }}
+</div>
+</div>
+</main> 
+{{ partial "footer" . }}
+{{ partial "scripts" . }}
+</body>
+</html>

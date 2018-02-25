@@ -1,0 +1,71 @@
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+   
+  }
+
+  
+  main {
+    flex: 1 0 auto;
+    
+  }
+
+/* Header */
+nav ul .fa {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+/*blockquote*/
+blockquote {
+    border-left: 5px solid #0277bd;
+}
+
+.card .card-content .card-title{
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+
+/* collection list de prix */
+.secondary-content{
+  font-weight: 500;
+  color: blue;
+}
+
+/* Formation  */
+
+.btn-floating .fa {
+  font-size: .9rem;
+ 
+}
+
+   
+/*----Typographie------*/
+h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */
+}
+
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height 
+    and something more appropriate for display headings */
+  }
+}
+

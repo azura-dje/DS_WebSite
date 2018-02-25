@@ -1,0 +1,49 @@
+baseURL = "http://djerbasub.com/"
+languageCode = "fr"
+theme = "djerbasub"
+title = "Centre de Plongée sous-marine Djerba-sub Tunisie"
+
+
+[[menu.main]]
+    name = "Accueil"
+    url  = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Formation"
+    url  = "/formation/"
+    weight = 2
+
+[[menu.main]]
+    name = "Exploration"
+    url  = "/exploration/"
+    weight = 3
+
+[[menu.main]]
+    name = "Tarifs"
+    url  = "/tarifs/"
+    weight = 4
+
+[[menu.main]]
+    name = "Galerie"
+    url  = "/galerie/"
+    weight = 5
+    
+[[menu.main]]
+    name = "Contact"
+    url  = "/contact/"
+    weight = 6
+    
+
+
+[params]
+address = """<p><strong>Centre de Plongée Djerba Sub</strong>
+        <br>Plage Hôtel Palais des îles
+        <br>Zone Touristique Midoun
+        <br>Djerba
+        <strong>Tunisie</strong>
+        <br>
+        <br><strong>Téléphone:</strong> +216 98 212 287 / +216 58 364 008
+        
+      </p>
+      """

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+{{ partial "head" . }}
+<body>
+{{ partial "header" . }}
+<main>
+<div class="container">
+  <h1>Contact</h1>
+  <div class="row">
+    <div class="col m6 s12">
+    <form id="contactform">
+      <div class="row">
+        <!-- Name -->
+        <div class="input-field col s12">
+            <input type="text" class="validate" name="name" id="name" required>
+            <label for="Nom">Nom:</label>
+          </div>
+          <!-- Email -->
+          <div class="input-field col s12">
+              <input type="email" class="validate" name="mail" id="email" required>
+              <label for="email">Email:</label>
+            </div>
+        <!-- textarea -->
+        <div class="input-field col s12">
+          <textarea class="materialize-textarea" id="message"  name="message" ></textarea>
+          <label for="message">Message:</label>
+        </div>
+        <div>
+          <input type="text" name="_gotcha" style="display:none" />
+      </div>
+      <!-- Btn -->
+      <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
+        <i class="material-icons right">send</i>
+      </button>
+      </div>
+    </form>
+  </div><!-- Form -->
+  <div  class="col m6 s12">
+    <div class="center-align">
+      
+      {{ .Site.Params.address | markdownify }}
+     
+    </div>
+  </div>
+</div>
+</div>
+</main>
+{{ partial "footer" . }}
+{{ partial "scripts" . }}
+</body>
+</html>
